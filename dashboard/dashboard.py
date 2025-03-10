@@ -32,7 +32,7 @@ def create_correlation_pivot(df):
     return correlation_pivot
 
 
-all_data = pd.read_csv('/dashboard/data.csv')
+all_data = pd.read_csv('https://github.com/Optra123/Proyek_Analisis_Data_Dicoding/blob/main/dashboard/data.csv')
 pollution_trend = create_pollution_trend_pivot(all_data)
 pm25_by_station = create_pm25_pivot(all_data)
 correlation_matrix = create_correlation_pivot(all_data)
