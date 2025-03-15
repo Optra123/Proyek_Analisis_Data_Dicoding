@@ -9,8 +9,8 @@ st.markdown("Dashboard ini menampilkan analisis polusi udara di Beijing berdasar
 
 # Sidebar filters
 st.sidebar.header("Filter Data 🔍")
-selected_station = st.sidebar.selectbox("Pilih Stasiun", pd.unique(pd.read_csv('all_data.csv')['station']))
-selected_year = st.sidebar.selectbox("Pilih Tahun", pd.unique(pd.read_csv('all_data.csv')['year']))
+selected_station = st.sidebar.selectbox("Pilih Stasiun", pd.unique(pd.read_csv('https://raw.githubusercontent.com/Optra123/Proyek_Analisis_Data_Dicoding/refs/heads/main/dashboard/all_data.csv')['station']))
+selected_year = st.sidebar.selectbox("Pilih Tahun", pd.unique(pd.read_csv('https://raw.githubusercontent.com/Optra123/Proyek_Analisis_Data_Dicoding/refs/heads/main/dashboard/all_data.csv')['year']))
 
 # Membaca data
 df = pd.read_csv('https://raw.githubusercontent.com/Optra123/Proyek_Analisis_Data_Dicoding/refs/heads/main/dashboard/all_data.csv')
